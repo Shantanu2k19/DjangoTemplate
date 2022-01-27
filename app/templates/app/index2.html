@@ -1,0 +1,16 @@
+{% load static %}
+<!-- Message -->
+SECONDARY PAGE 
+<hr>
+<div class="message_text">
+    {% if messages %}
+    <ul id="mssg">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}    
+</div>
+
+<a href="{% url 'index' %}">back to main page</a>
+<!-- Message End-->
