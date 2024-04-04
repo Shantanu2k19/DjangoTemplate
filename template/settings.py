@@ -15,6 +15,9 @@ from pathlib import Path
 
 #for logging 
 import os 
+print("Current working directory: ", os.getcwd())
+
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -23,7 +26,7 @@ LOGGING = {
         "file": {
             "level": "INFO",
             "class": "logging.FileHandler",
-            "filename": "/home/zodiac/Desktop/DjangoTemplate/logs/django.log",
+            "filename": os.getcwd()+"/logs/django.log",
             "formatter": "app",
         },
     },
