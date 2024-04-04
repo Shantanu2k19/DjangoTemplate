@@ -7,15 +7,20 @@ from django.contrib import messages
 
 # Create your views here.
 def index(request):
-    print("ran")
+    print("print messages")
+    logging.debug("This is a debug message")
+    logging.info("This is an info message")
+    logging.warning("This is a warning message")
+    logging.error("This is an error message")
+    logging.critical("This is a critical message")
     return render(request, "app/index.html")
+
 
 def index2(request):
     if request.method=="POST":
         # Get the post parameters
         name=request.POST['name']
         if name=='shan':
-          messages.info(request, 'hello shan!')
           return render(request, "app/index2.html")
         else:
           messages.info(request, 'who r u? '+name)

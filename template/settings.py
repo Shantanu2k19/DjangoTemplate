@@ -15,7 +15,7 @@ from pathlib import Path
 
 #for logging 
 import os 
-print("Current working directory: ", os.getcwd())
+from logging.handlers import RotatingFileHandler
 
 
 LOGGING = {
@@ -25,9 +25,11 @@ LOGGING = {
     "handlers": {
         "file": {
             "level": "INFO",
-            "class": "logging.FileHandler",
-            "filename": os.getcwd()+"/logs/django.log",
+            "class": "logging.handlers.RotatingFileHandler",
+            "filename": os.path.join(os.getcwd(), "logs", "django.log"),
             "formatter": "app",
+            "maxBytes": 1024 * 1024,  # 1 MB
+            "backupCount": 5,  # Number of backup log files
         },
     },
     "loggers": {
@@ -40,7 +42,7 @@ LOGGING = {
     "formatters": {
         "app": {
             "format": (
-                u"%(asctime)s [%(levelname)-8s] "
+                u"%(asctime)s [%(levelname)-5s] "
                 "(%(module)s.%(funcName)s) %(message)s"
             ),
             "datefmt": "%Y-%m-%d %H:%M:%S",
