@@ -1,0 +1,16 @@
+2024-06-06 03:45:04 [INFO ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-06-06 03:45:04 [INFO ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-06-06 03:45:16 [INFO ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-06-06 03:45:16 [INFO ] (autoreload.run_with_reloader) Watching for file changes with StatReloader
+2024-06-06 03:45:17 [INFO ] (views.index) This is an info message
+2024-06-06 03:45:17 [WARNING] (views.index) This is a warning message
+2024-06-06 03:45:17 [ERROR] (views.index) This is an error message
+2024-06-06 03:45:17 [CRITICAL] (views.index) This is a critical message
+2024-06-06 03:45:17 [INFO ] (basehttp.log_message) "GET / HTTP/1.1" 200 437
+2024-06-06 03:45:17 [INFO ] (basehttp.log_message) "GET / HTTP/1.1" 200 437
+2024-06-06 03:45:18 [WARNING] (log.log_response) Not Found: /favicon.ico
+2024-06-06 03:45:18 [WARNING] (log.log_response) Not Found: /favicon.ico
+2024-06-06 03:45:18 [WARNING] (basehttp.log_message) "GET /favicon.ico HTTP/1.1" 404 2441
+2024-06-06 03:45:18 [WARNING] (basehttp.log_message) "GET /favicon.ico HTTP/1.1" 404 2441
+2024-06-06 03:45:37 [INFO ] (autoreload.trigger_reload) /home/zodiac/Desktop/imageAPI/DjangoTemplate/template/settings.py changed, reloading.
+2024-06-06 03:45:37 [INFO ] (autoreload.trigger_reload) /home/zodiac/Desktop/imageAPI/DjangoTemplate/template/settings.py changed, reloading.
