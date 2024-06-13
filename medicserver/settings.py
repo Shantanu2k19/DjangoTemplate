@@ -99,6 +99,13 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",  # Add your Next.js app's URL here
 ]
 
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'x-csrftoken',
+    'x-username',
+    'x-APIKEY',
+]
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
